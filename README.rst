@@ -113,3 +113,6 @@ FastPayではクレジットカード情報は直接扱わず、FastPay側でト
     except fastpay.FastPayError as e:
         print("システムエラー %s" % str(e))
 
+License
+-------
+MITライセンスにて提供しています。詳しくはLICENSEをご覧ください。
