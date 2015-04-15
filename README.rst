@@ -5,8 +5,11 @@ FastPayをPythonで簡単に利用するためのSDKです。
 
 インストール
 ------------
+
 pipコマンドでインストールを行います
-::
+
+.. code-block:: bash
+
     $ pip install fastpay
 
 
@@ -14,13 +17,15 @@ pipコマンドでインストールを行います
 ------
 
 FastPayではクレジットカード情報は直接扱わず、FastPay側でトークン化したものを使って安全に決済を行います。
-トークン化など全体的な流れについては、`FastPayのドキュメント[支払いフロー] <https://fastpay.yahoo.co.jp/docs/flow>`_ をご覧ください。
+トークン化など全体的な流れについては、 `FastPayのドキュメント[支払いフロー] <https://fastpay.yahoo.co.jp/docs/flow>`_ をご覧ください。
 
 課金
 ~~~~
 
 詳細についてはFastPayのドキュメント `新規決済の作成 <https://fastpay.yahoo.co.jp/docs/pay/new>`_ をご覧ください。
-::
+
+.. code-block:: python
+
     import fastpay
 
     # fastpay.jsで取得します。"fastpayToken"というパラメータでhiddenのinputにて送信されます。
@@ -51,7 +56,9 @@ FastPayではクレジットカード情報は直接扱わず、FastPay側でト
 ~~~~
 
 詳細についてはFastPayのドキュメント `決済の確定 <https://fastpay.yahoo.co.jp/docs/pay/fixed>`_ をご覧ください。
-::
+
+.. code-block:: python
+
     import fastpay
 
     client = fastpay.FastPay("シークレット")
@@ -69,7 +76,9 @@ FastPayではクレジットカード情報は直接扱わず、FastPay側でト
 ~~~~
 
 詳細についてはFastPayのドキュメント `払い戻し処理 <https://fastpay.yahoo.co.jp/docs/pay/rtnpay>`_ をご覧ください。
-::
+
+.. code-block:: python
+
     import fastpay
 
     client = fastpay.FastPay("シークレット")
@@ -87,7 +96,9 @@ FastPayではクレジットカード情報は直接扱わず、FastPay側でト
 ~~~~~~~~~~~~~~
 
 継続課金についてはまずはFastPayのドキュメント `継続課金とは <https://fastpay.yahoo.co.jp/docs/guide_subscription>`_ をごらんください。
-::
+
+.. code-block:: python
+
     import fastpay
 
     client = fastpay.FastPay("シークレット")
@@ -102,7 +113,9 @@ FastPayではクレジットカード情報は直接扱わず、FastPay側でト
 ~~~~~~~~~~~~~~
 
 継続停止についてもFastPayのドキュメント `継続課金とは <https://fastpay.yahoo.co.jp/docs/guide_subscription>`_ をごらんください。
-::
+
+.. code-block:: python
+
     import fastpay
 
     client = fastpay.FastPay("シークレット")
@@ -115,4 +128,5 @@ FastPayではクレジットカード情報は直接扱わず、FastPay側でト
 
 License
 -------
+
 MITライセンスにて提供しています。詳しくはLICENSEをご覧ください。
