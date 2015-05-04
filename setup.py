@@ -15,7 +15,7 @@ class Tox(Command):
         errno = subprocess.call('tox')
         raise SystemExit(errno)
 
-with open('README.rst') as readme_file:
+with open('README.rst', encoding='utf-8') as readme_file:
     readme = readme_file.read()
 
 with open('VERSION') as version_file:
